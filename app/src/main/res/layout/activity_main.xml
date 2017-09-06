@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ross.firstactivity.MainActivity">
+
+
+    <Button
+        android:id="@+id/compute"
+        android:layout_width="100dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/MExam"
+        android:layout_marginTop="200dp"
+        android:onClick="Calculate"
+        android:text="COMPUTE"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="406dp" />
+
+        <TextView
+            android:id="@+id/Q1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz 1"
+            android:layout_marginTop="60dp"
+            android:textStyle="bold"
+            />
+    <EditText
+        android:id="@+id/EQ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Q1"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@+id/Q1"
+        android:hint="Enter Quiz 1"
+        android:inputType="numberDecimal" />
+
+    <TextView
+            android:id="@+id/Q2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz 2"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/Q1"
+            android:textStyle="bold"
+
+            />
+    <EditText
+        android:id="@+id/EQ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Q2"
+        android:layout_toRightOf="@+id/Q2"
+        android:hint="Enter Quiz 2"
+        android:layout_marginLeft="100dp"
+        android:inputType="numberDecimal"
+        />
+
+        <TextView
+            android:id="@+id/Seatworks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seatworks"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/Q2"
+            android:textStyle="bold"
+            />
+    <EditText
+        android:id="@+id/Seatwork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Seatworks"
+        android:layout_toRightOf="@+id/Seatworks"
+        android:hint="Enter Seatwork"
+        android:layout_marginLeft="70dp"
+        android:inputType="numberDecimal"
+        />
+
+    <TextView
+        android:id="@+id/Lab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lab Exercises"
+        android:layout_below="@id/Seatwork"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+
+
+        />
+    <EditText
+        android:id="@+id/ELab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Lab"
+        android:layout_toRightOf="@+id/Lab"
+        android:hint="Enter Lab Exercises"
+        android:layout_marginLeft="60dp"
+        android:inputType="numberDecimal"
+        />
+
+    <TextView
+            android:id="@+id/MExam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Major Exam"
+            android:layout_below="@id/Lab"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+
+            />
+    <EditText
+        android:id="@+id/EMExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/MExam"
+        android:layout_toRightOf="@+id/MExam"
+        android:hint="Enter Major Exam"
+        android:layout_marginLeft="60dp"
+        android:inputType="numberDecimal"
+        />
+
+
+</RelativeLayout>
